@@ -43,6 +43,16 @@ window.addEventListener("click", event => {
 
 window.addEventListener("keydown", event => {
 	if (event.key == 's') {
-		console.save(page_urls, `urls scrap-${document.title}.json`)
+		console.save(page_urls, `urls scrap-${document.title}.json`);
+	}
+	else {
+		document.querySelectorAll("canvas.page").forEach(canvas => {
+			addCanvasUrl(canvas);
+		});
 	}
 });
+
+
+// Instructions
+console.log("Browse to the next page until they are all added")
+console.log("Then press 's' to save and download the .json file")
