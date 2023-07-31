@@ -45,11 +45,11 @@ window.addEventListener("keydown", event => {
 	if (event.key == 's') {
 		console.save(page_urls, `urls scrap-${document.title}.json`);
 	}
-	else {
-		document.querySelectorAll("canvas.page").forEach(canvas => {
-			addCanvasUrl(canvas);
-		});
-	}
+	// else {
+	// 	document.querySelectorAll("canvas.page").forEach(canvas => {
+	// 		addCanvasUrl(canvas);
+	// 	});
+	// }
 });
 
 
