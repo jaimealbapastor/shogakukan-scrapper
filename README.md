@@ -17,6 +17,13 @@ There are two codes:
 - A [javascript script](copy-paste.js) to copy and paste in browser.  
 This will retrieve the manga's pages urls by browsing each page and then save said urls in a `json` file.
 
+How to use it ?
+1. Go to the first page of the manga.
+2. Open the console and paste the javascript code.
+3. Click to the next page, you will see that the pages are being scrapped one by one.
+4. Continue until you arrive to the last page.
+5. Press 's' to export and save the json file.
+
 - A [python CLI](main.py) to download the images from the `json` file and combine them into a `pdf`
 
 ```txt
